@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "cell-interaction-gnn"
+version = "0.1.0"
+description = "Probing the rules of cell coordination in live tissues by interpretable machine learning based on graph neural networks"
+authors = ["Takaki Yamamoto"]
+license = "Apache-2.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.7.7"
+torch = "1.6.0"
+dgl = "0.5.0"
+numpy = "1.18.5"
+matplotlib = "3.3.1"
+scikit-learn = "0.23.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
