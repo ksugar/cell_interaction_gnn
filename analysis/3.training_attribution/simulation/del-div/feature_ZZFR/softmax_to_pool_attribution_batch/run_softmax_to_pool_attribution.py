@@ -59,6 +59,8 @@ for count, base_w in enumerate(base_list):
 
     os.environ['CUDA_VISIBLE_DEVICES'] = "%d"%gpu
     
+    sutil.MakeDirs(base_list[count])
+
     time_sta = time.time()
     
     with open(base_list[count] + "/output_softmax_to_pool_attribution_plot_softmax_score.txt", 'w') as fp:

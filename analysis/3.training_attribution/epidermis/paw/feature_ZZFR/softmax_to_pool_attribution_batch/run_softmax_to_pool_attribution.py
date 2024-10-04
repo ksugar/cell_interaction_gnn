@@ -58,6 +58,8 @@ for count, base_w in enumerate(base_list):
         f.write(base_list[count])
 
     os.environ['CUDA_VISIBLE_DEVICES'] = "%d"%gpu
+
+    sutil.MakeDirs(base_list[count])
     
     time_sta = time.time()
     

@@ -56,6 +56,8 @@ for count, base_w in enumerate(base_list):
     #print (msg)
     os.environ['CUDA_VISIBLE_DEVICES'] = "%d"%gpu
 
+    sutil.MakeDirs(base_list[count])
+
     with open(base_list[count] + "/output_calculate_attribution.txt", 'w') as fp:
         # Use this to run parallel. But to load filename correctly. we wait.
         proc = subprocess.Popen(['python', program_path], stdout=fp, stderr=fp)

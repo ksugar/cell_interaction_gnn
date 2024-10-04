@@ -54,6 +54,8 @@ for count, base_w in enumerate(base_list):
     #msg = run_and_capture(['sh', 'all.sh'])
     #print (msg)
 
+    sutil.MakeDirs(base_list[count])
+
     with open(base_list[count] + "/output_softmax_to_pool_attribution_plot_softmax_score.txt", 'w') as fp:
         # Use run to load filenames safely.
         proc = subprocess.run(['python', program_path1], stdout=fp, stderr=fp)
