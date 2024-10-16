@@ -1,0 +1,20 @@
+DGL backend not selected or invalid.  Assuming PyTorch for now.
+Using backend: pytorch
+/opt/conda/lib/python3.7/site-packages/torch/cuda/__init__.py:125: UserWarning: 
+NVIDIA GeForce RTX 3050 Ti Laptop GPU with CUDA capability sm_86 is not compatible with the current PyTorch installation.
+The current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60 sm_61 sm_70 sm_75 compute_37.
+If you want to use the NVIDIA GeForce RTX 3050 Ti Laptop GPU GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
+
+  warnings.warn(incompatible_device_warn.format(device_name, capability, " ".join(arch_list), device_name))
+Setting the default backend to "pytorch". You can change it in the ~/.dgl/config.json file or export the DGLBACKEND environment variable.  Valid options are: pytorch, mxnet, tensorflow (all lowercase)
+version=1
+1 GPUs available
+1.6.0
+cuda
+0
+Traceback (most recent call last):
+  File "/workspace/codes/analyze_model/analyze_prediction_performance/plot_performance_vs_time.py", line 260, in <module>
+    param = sutil.PickleLoad(parameters_file_path)
+  File "/workspace/codes/functions/system_utility.py", line 67, in PickleLoad
+    with open(filepath, mode='rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../../../analysis/3.training_attribution/epidermis/paw/bidirectional_sum_AG/result/NSP_fnum2_time4_netnorm_all_1hot_rev-FLedit-G1Signal_ptest0_noself0_inplane1_skip0_nullnet0_ave0_edge0_reg0-0_nullw0_even0/model=5_epoch=2000_hidnode=50_lr=0.000100_opt=adam_feature=feature_concat_infeats=2_penalty=1.0_shuffle=0_noself=0_drop=0.10_wd=0.000000_inplane=1_omitt0=0_border=0_ptest=0_layer=1_0//parameters.pickle'

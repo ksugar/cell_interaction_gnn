@@ -1,0 +1,7 @@
+docker run --gpus all -it --rm -v C:/Users/Martin/Documents/GitHub/GloBIAS/Workshop/cell_interaction_gnn_edit:/workspace pytorch/pytorch:1.6.0-cuda10.1-cudnn7-runtime bash
+
+pip install -r requirements.txt
+
+python -c "import torch; print(torch.cuda.is_available())"
+
+echo "/workspace/codes" > /opt/conda/lib/python3.7/site-packages/custom_path.pth

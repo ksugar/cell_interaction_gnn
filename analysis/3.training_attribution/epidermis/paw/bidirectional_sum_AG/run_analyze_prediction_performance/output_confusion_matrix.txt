@@ -1,0 +1,9 @@
+version=1
+Traceback (most recent call last):
+  File "/workspace/codes/analyze_model/analyze_prediction_performance/average_confusion_matrix.py", line 222, in <module>
+    filename_Max_epoch, listname_list, name_list, data_type_name, version, work_dir)
+  File "/workspace/codes/analyze_model/analyze_prediction_performance/average_confusion_matrix.py", line 140, in AverageConfusionMatrixOverSamples
+    Max_epoch = sutil.PickleLoad(filepath_Max_epoch)
+  File "/workspace/codes/functions/system_utility.py", line 67, in PickleLoad
+    with open(filepath, mode='rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../../../../../../analysis/3.training_attribution/epidermis/paw/bidirectional_sum_AG/result/NSP_fnum2_time4_netnorm_all_1hot_rev-FLedit-G1Signal_ptest0_noself0_inplane1_skip0_nullnet0_ave0_edge0_reg0-0_nullw0_even0/model=5_epoch=2000_hidnode=50_lr=0.000100_opt=adam_feature=feature_concat_infeats=2_penalty=1.0_shuffle=0_noself=0_drop=0.10_wd=0.000000_inplane=1_omitt0=0_border=0_ptest=0_layer=1_0//ROC_time/data/MaxMacroF1_epoch.pickle'
