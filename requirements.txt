@@ -1,0 +1,8 @@
+torch==1.6.0
+dgl-cu102==0.5.0
+numpy==1.18.5
+matplotlib==3.3.1
+scikit-learn==0.23.2
+pyyaml==6.0.1
+ipykernel==6.16.2
+tifffile==2021.11.2
